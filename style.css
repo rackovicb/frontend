@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: #032026;
+}
+.navigation{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+.logo{
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: black;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    margin: 0px 30px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+.nav-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-social a{
+    color: white;
+    margin-left: 20px;
+    transition: all ease 0.3s;
+}
+
+.nav-social a:first-child{
+    margin-left: 0px;
+}
+.menu li a:hover,
+.nav-social a:hover{
+    color: white;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+.main-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.main-content span{
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.main-content strong{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.main-content h1{
+    font-size: 3rem;
+    color: white;
+    line-height: 3.4rem;
+    margin-top: 20px;
+}
+.main-content p{
+
+    color: grey;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}
+#about-me{
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+}
+#about-me strong{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+
+#about-me h2{
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: grey;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.about-text{
+    margin-top: 30px;
+    max-width: 85%;
+    margin-left: auto;
+}
+.about-text h3{
+    font-size: 3rem;
+    line-height: 3.4rem;
+    color: black;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.about-text p{
+
+    color: grey;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+    letter-spacing: 0.3px;
+}
+.about-text a{
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.about-text a i{
+    margin-left: 10px;
+}
+#our-services{
+    width: 100%;
+    margin: 50px auto 0 auto;
+    background-color:#2e636e;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.services-heading strong{
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.services-heading h2{
+    color: white;
+    font-size: 2.2rem;
+    max-width: 600px;
+    font-weight: 700;
+}
+.services-box-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.service-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+    border: 3px solid #720404;
+    padding: 30px;
+    background-color: #d8d8d8;
+    
+
+}
+.services-box i{
+    font-size: 2rem;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141d4b3b;
+}
+
+.services-box strong{
+
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.services-box p{
+
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.services-box a{
+    height: 45px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+.services-box:hover{
+    border: 1px solid #8d94b4;
+}
+.service-btn{
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0px 10px;
+}
+.service-btn a{
+    color: grey;
+    text-decoration: underline;
+    font-weight: 600;
+}
+#contact{
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    text-align: center;
+}
+.contact strong{
+    color: grey;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.contact h3{
+    color: black;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+.contact p{
+    color: black;
+    font-weight: 500;
+    max-width: 600px;
+}
+.contact a{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #1a1a1a;
+    font-size: 600;
+    margin-top: 20px;
+}
+.contact a i{
+    margin-left: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950;
+    width: 100%;
+    margin: 70px auto 0px auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+}
+footer span{
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;  
+}
+footer .footer-logo{
+    color: #1f1f1f;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
